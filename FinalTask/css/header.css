@@ -1,0 +1,33 @@
+header {
+  background-color: blue;
+  display:grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 12rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 2rem;
+}
+
+nav{
+  align-self: center;
+}
+
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+#buscar {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+#search {
+  margin-right: 1em;
+}

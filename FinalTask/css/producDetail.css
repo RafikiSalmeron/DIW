@@ -1,0 +1,195 @@
+section {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 5fr 2.5fr 3.5fr 5fr;
+  grid-gap: 1rem;
+  grid-column-gap: 2rem;
+}
+
+.imgPrinc {
+  grid-column: 1;
+  grid-row: 2 / span 5;
+}
+
+.imgPrinc>img {
+  max-width: 100%;
+  height: 100%;
+  align-self: center;
+}
+
+.imgSecun {
+  grid-column: 1;
+  grid-row: 7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgSecun>img {
+  max-width: 18%;
+  height: auto;
+}
+.imgSecun>img:hover {
+  transform: scale(1.1);
+}
+
+section>div {
+  font-weight: bold;
+}
+
+#divProd {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+}
+
+#divPrec {
+  grid-column: 2;
+  grid-row: 3;
+  align-self: center;
+}
+
+#divDesc {
+  grid-column: 2;
+  grid-row: 4;
+  align-self: center;
+}
+
+#descripcion {
+  grid-column: 2;
+  grid-row: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#divColores {
+  grid-column: 2;
+  grid-row: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#divBoton {
+  grid-column: 2;
+  grid-row: 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#divBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+#divBtn>button {
+  height: 80%;
+  margin-left: 1rem;
+  width: 10%;
+}
+
+#descripcion>p {
+  width: 90%;
+  text-align: justify;
+  font-weight: normal;
+}
+
+#red {
+  color: red;
+  border-color: red;
+}
+
+#red:hover {
+  background-color: red;
+  color: white;
+}
+
+#green {
+  color: green;
+  border-color: green;
+}
+
+#green:hover {
+  background-color: green;
+  color: white;
+}
+
+#black {
+  color: black;
+  border-color: black;
+}
+
+#black:hover {
+  background-color: black;
+  color: white;
+}
+
+#orange {
+  color: #bb7000;
+  border-color: #bb7000;
+}
+
+#orange:hover {
+  background-color: #bb7000;
+  color: white;
+}
+
+table{
+  width: 50%;
+}
+
+#tabla {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B6D7A8;
+  box-shadow: 2px 3px;
+  border-radius: 8px;
+}
+
+#tabla:hover{
+  transform: scale(1.1);
+}
+#resenaContainer{
+  grid-row: 8;
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+#resena{
+  display: flex;
+  flex-direction: row;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 1em;
+  justify-content: space-between;
+  width: 100%;
+}
+.media {
+  display: flex;
+  flex-direction: row;
+  background: #FEF5E7;
+  padding: 2em;
+  border-radius: 20px;
+  max-width: 23em;
+  max-height: 12em;
+  font-weight: normal;
+}
+
+.media-object {
+  padding-right: 1em;
+}
+
+#destacadas {
+  font-size: x-large;
+}

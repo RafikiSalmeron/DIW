@@ -1,11 +1,12 @@
 header {
-  background-color: blue;
+  background-color: #B4A7D6;
   display:grid;
   grid-template-rows: repeat(2, 1fr);
-  height: 12rem;
   padding-left: 2rem;
   padding-right: 2rem;
   border-radius: 2rem;
+  border-style: solid;
+  border-color: #8E7CC3;
 }
 
 nav{
@@ -13,9 +14,8 @@ nav{
 }
 
 #top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #logo {
@@ -23,11 +23,42 @@ nav{
   height: 4rem;
 }
 
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo > p{
+  margin-left: 1rem;
+  margin-bottom: 0;
+  font-size: x-large;
+  font-family: 'Brush Script MT', cursive;
+  color: #4d70eb;
+}
+
+
 #buscar {
   display: flex;
   flex-direction: row;
   height: 50%;
+  align-self: center;
 }
+
+#botones{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#botones > img:hover{
+  transform: scale(1.2);
+}
+
 #search {
   margin-right: 1em;
+}
+#user{
+  margin-left: 1rem;
 }

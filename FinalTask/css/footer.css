@@ -9,7 +9,7 @@ footer {
   margin-top: 1rem;
 }
 
-footer > div {
+footer>div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -25,10 +25,20 @@ footer > div {
   margin-bottom: 0;
   font-size: larger;
 }
-.divFoot > img {
+
+.divFoot img {
   margin-right: 0.5rem;
 }
-#nameEmpresa{
+
+.divFoot img:hover {
+  transform: scale(1.1);
+}
+
+#nameEmpresa {
   font-size: xx-large;
   font-family: 'Brush Script MT', cursive;
+}
+
+footer a {
+  color: black;
 }

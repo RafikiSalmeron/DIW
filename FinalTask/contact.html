@@ -24,7 +24,7 @@
 					<button id="btnSearch" onclick="searchDoc()" class="btn btn-outline-primary">Search</button>
 				</div>
 				<div id="botones">
-					<img id="cart" alt="Cesta de la compra" src="./img/cart.png" />
+					<a href="cesta.html"><img id="cart" alt="Cesta de la compra" src="./img/cart.png" /></a>
 					<img id="user" alt="Tu usuario" src="./img/user.png" />
 				</div>
 			</div>
@@ -56,15 +56,15 @@
 			<form action="index.html" method="post">
 				<div class="itemForm">
 					<label for="name">Su nombre y apellidos (Requerido)</label>
-					<input type="text" class="form-control" name="name">
+					<input type="text" class="form-control" required maxlength="40" name="name">
 				</div>
 				<div class="itemForm">
 					<label for="mail">Correo Electrónico (Requerido)</label>
-					<input type="email" class="form-control" name="mail">
+					<input type="email" class="form-control" required name="mail">
 				</div>
 				<div class="itemForm">
 					<label for="telefono" >Número de teléfono (Requerido)</label>
-					<input type="text" class="form-control" name="telefono">
+					<input type="text" class="form-control" required pattern="[0-9]{9}" name="telefono">
 				</div>
 				<div class="itemForm">
 					<label for="asunto">Asunto</label>
@@ -82,25 +82,37 @@
 		<footer>
 			<div>
 				<p id="nameEmpresa">Rafikify</p>
-				<div class="divFoot">
-					<img src="./img/email.png">
-					<p class="pFooter">rafikify@email.com</p>
-				</div>
+				<a href="mailto:elcorreoquequieres@correo.com">
+					<div class="divFoot">
+						<img src="./img/email.png">
+						<p class="pFooter">rafikify@email.com</p>
+					</div>
+				</a>
 				<div class="divFoot">
 					<img src="./img/phone.png">
 					<p class="pFooter">999 99 99 99</p>
 				</div>
 			</div>
 			<div>
+				<a href="https://www.google.es/maps/preview">
+					<div class="divFoot">
+						<img src="./img/gps.png">
+						<p class="pFooter">¿Cómo llegar?</p>
+					</div>
+				</a>
 				<div class="divFoot">
-					<img src="./img/gps.png">
-					<p class="pFooter">¿Cómo llegar?</p>
-				</div>
-				<div class="divFoot">
-					<img src="./img/facebook.png">
+					<a href="https://www.facebook.com">
+						<img src="./img/facebook.png">
+					</a>
+					<a href="https://www.instagram.com">
 					<img src="./img/instagram.png">
+				</a>
+				<a href="https://www.twitter.com">
 					<img src="./img/twitter.png">
+				</a>
+				<a href="https://www.youtube.com">
 					<img src="./img/youtube.png">
+				</a>
 				</div>
 			</div>
 		</footer>

@@ -13,6 +13,20 @@ nav{
   align-self: center;
 }
 
+nav li:hover{
+  transform: scale(1.1);
+  background-color: #0275d8;
+  border-radius: 5px;
+  color: red;
+}
+nav li:hover a{
+  color: white;
+}
+
+#btnSearch:hover{
+  transform: scale(1.1);
+}
+
 #top-header {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -52,7 +66,7 @@ nav{
   justify-content: flex-end;
 }
 
-#botones > img:hover{
+#botones  img:hover{
   transform: scale(1.2);
 }
 

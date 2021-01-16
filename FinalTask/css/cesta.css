@@ -1,0 +1,147 @@
+section {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr 0.2fr 1fr 0.2fr 5fr 0.2fr 4fr;
+  grid-gap: 1rem;
+  margin-left: 1rem;
+}
+
+h3 {
+  margin-left: 1rem;
+  grid-row: 2;
+}
+
+h6 {
+  margin-left: 1rem;
+  grid-row: 3;
+}
+
+#tophr {
+  grid-row: 4;
+  grid-column: 1 / span 3;
+}
+
+#medhr {
+  grid-row: 6;
+  grid-column: 1 / span 3;
+}
+
+#article {
+  grid-row: 5;
+  grid-column: 1;
+  text-align: center;
+  align-self: center;
+}
+
+#precio {
+  grid-row: 5;
+  grid-column: 2;
+  text-align: center;
+  align-self: center;
+}
+
+#cantidad {
+  grid-row: 5;
+  grid-column: 3;
+  text-align: center;
+  align-self: center;
+}
+
+.articulo {
+  grid-row: 7;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-left: 10%;
+}
+
+.img-article {
+  width: 80%;
+  height: 80%;
+  align-self: center;
+}
+
+#info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#producto {
+  font-weight: bold;
+}
+
+#infoProduc {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+#stock {
+  font-weight: bold;
+  color: green;
+}
+
+#precioBot {
+  grid-row: 7;
+  grid-column: 2;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  align-self: center;
+}
+
+#step {
+  grid-row: 7;
+  grid-column: 3;
+  align-self: center;
+  text-align: center;
+}
+
+#points {
+  width: 3em;
+  text-align: center;
+}
+
+#bothr {
+  grid-row: 8;
+  grid-column: 1 / span 3;
+}
+
+#botonCesta {
+  grid-row: 9;
+  grid-column: 1 / span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#subtotal {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#realizar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  height: 40%;
+  margin-top: 4vh;
+  background-color: #B6D7A8;
+  box-shadow: 2px 3px;
+  border-radius: 8px;
+}
+
+#realizar a{
+  color:black;
+}
+
+#realizar:hover {
+  transform: scale(1.1);
+}
